@@ -117,8 +117,7 @@ public class RegistrationForm extends Fragment {
                     e.printStackTrace();
                 }
 
-                NavHostFragment.findNavController(RegistrationForm.this)
-                        .navigate(R.id.action_registrationform_to_loginform);
+                NavHostFragment.findNavController(RegistrationForm.this).popBackStack();
             }
         });
     }

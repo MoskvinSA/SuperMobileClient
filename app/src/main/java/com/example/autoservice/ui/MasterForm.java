@@ -73,7 +73,7 @@ public class MasterForm extends Fragment {
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.WRAP_CONTENT,
                         LinearLayout.LayoutParams.WRAP_CONTENT);
-                params.setMargins(0,20,30,30);
+                params.setMargins(0,20,0,30);
                 params.gravity = Gravity.CENTER;
                 TextView tv = new TextView(this.getContext());
                 tv.setWidth(650);

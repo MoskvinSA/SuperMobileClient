@@ -15,7 +15,7 @@
             android:textAlignment="textStart"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.35"
             app:layout_constraintStart_toStartOf="parent" />
@@ -37,14 +37,14 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/textInputLayout1"
             android:layout_width="300dp"
             android:layout_height="60dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.29000002">
+            app:layout_constraintVertical_bias="0.29">
 
             <EditText
                 android:id="@+id/id"
@@ -66,19 +66,18 @@
             android:id="@+id/status"
             android:layout_width="304dp"
             android:layout_height="71dp"
-            android:background="@color/material_dynamic_neutral90"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.523"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.572" />
+            app:layout_constraintVertical_bias="0.572"/>
 
         <Button
             android:id="@+id/okButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="okButton"
+            android:text="Изменить статус заказа"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

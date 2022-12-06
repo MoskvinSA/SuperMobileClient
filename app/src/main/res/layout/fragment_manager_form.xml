@@ -13,8 +13,8 @@
             android:layout_width="409dp"
             android:layout_height="172dp"
             android:layout_marginStart="1dp"
-            android:layout_marginBottom="560dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="544dp"
+            app:layout_constraintBottom_toBottomOf="@+id/getClientIdButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent">
@@ -30,7 +30,7 @@
             android:id="@+id/getOrdersListButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="getOrdersListButton"
+            android:text="Показать все заказы"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.481"
@@ -62,7 +62,7 @@
             android:id="@+id/getCallBacksButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="getCallBacksButton"
+            android:text="заказы на звонок"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
@@ -72,27 +72,27 @@
 
         <Button
             android:id="@+id/changeOrderButton"
-            android:layout_width="95dp"
-            android:layout_height="81dp"
-            android:text="Edit"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:text="Изменить"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintHorizontal_bias="0.191"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.716" />
 
         <Button
             android:id="@+id/addNewOrderButton"
-            android:layout_width="93dp"
+            android:layout_width="140dp"
             android:layout_height="80dp"
-            android:text="New"
+            android:text="Новый заказ"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.685"
+            app:layout_constraintHorizontal_bias="0.776"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.717" />
+            app:layout_constraintVertical_bias="0.716" />
 
         <EditText
             android:id="@+id/userNameField"
@@ -100,6 +100,7 @@
             android:layout_height="45dp"
             android:ems="10"
             android:inputType="text"
+            android:hint="Полное имя клиента"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.478"
@@ -111,7 +112,7 @@
             android:id="@+id/getClientIdButton"
             android:layout_width="344dp"
             android:layout_height="54dp"
-            android:text="getClientIdButton"
+            android:text="Получить ID клиента по имени"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

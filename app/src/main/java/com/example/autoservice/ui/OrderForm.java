@@ -52,17 +52,27 @@ public class OrderForm extends Fragment {
                     dialog.show(getActivity().getSupportFragmentManager(), "custom");
                     return;
                 }
-                ForSavingOrderDto tmpDto=new ForSavingOrderDto(
-                                binding.name.getText().toString(),
-                                Long.parseLong(binding.clientId.getText().toString()),
-                                new Date(binding.dateAndTime.getText().toString()));
+                try {
+                    ForSavingOrderDto tmpDto=new ForSavingOrderDto(
+                                    binding.name.getText().toString(),
+                                    Long.parseLong(binding.clientId.getText().toString()),
+                                    new Date(binding.dateAndTime.getText().toString()));
 
-                String response = UtilClass.sendRequestToSaveOrder(tmpDto);
-                if (response.equals("Success")) {
+                    String response = UtilClass.sendRequestToSaveOrder(tmpDto);
+                    if (response.equals("Success")) {
+                        CustomDialogFragment dialog = new CustomDialogFragment(
+                                "",
+                                "Успех",
+                                "Заказ отправлен");
+                        dialog.show(getActivity().getSupportFragmentManager(), "custom");
+                        NavHostFragment.findNavController(OrderForm.this).popBackStack();
+                    }
+                } catch (Exception e) {
                     CustomDialogFragment dialog = new CustomDialogFragment(
                             "",
-                            "Успех",
-                            "Заказ отправлен");
+                            "Ошибка",
+                            "Неверный формат даты\n" +
+                                    "Пример формата: 12/12/2012 12:12");
                     dialog.show(getActivity().getSupportFragmentManager(), "custom");
                 }
             }

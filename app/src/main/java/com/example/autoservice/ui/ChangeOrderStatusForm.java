@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,6 +67,14 @@ public class ChangeOrderStatusForm extends Fragment {
                 UtilClass.sendRequestToChangeStatus(
                         binding.id.getText().toString(), tmpStatus
                 );
+
+                CustomDialogFragment dialog = new CustomDialogFragment(
+                        "",
+                        "Успех!",
+                        "Статус заказа был изменен.");
+                dialog.show(getActivity().getSupportFragmentManager(), "custom");
+
+                NavHostFragment.findNavController(ChangeOrderStatusForm.this).popBackStack();
             }
         });
     }

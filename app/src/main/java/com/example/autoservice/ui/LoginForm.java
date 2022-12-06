@@ -127,7 +127,7 @@ public class LoginForm extends Fragment {
                 CustomDialogFragment dialog = new CustomDialogFragment(
                         "",
                         "Ошибка",
-                        "Вы не ввели не верный не сущестующий аккаунт.\n" +
+                        "Вы не ввели не верный или не сущестующий аккаунт.\n" +
                                 "Заполните эти поля и попробуйте снова.");
                 dialog.show(getActivity().getSupportFragmentManager(), "custom");
             }

@@ -61,8 +61,7 @@ public class CallBackForm extends Fragment {
                             "Успех!",
                             "Работа потверждена. ");
                     dialog.show(getActivity().getSupportFragmentManager(), "custom");
-                    NavHostFragment.findNavController(CallBackForm.this)
-                            .navigate(R.id.action_callbackform_to_customerform);
+                    NavHostFragment.findNavController(CallBackForm.this).popBackStack();
                 }
             }
         });

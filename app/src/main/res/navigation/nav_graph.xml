@@ -28,12 +28,7 @@
     <fragment
         android:id="@+id/RegistrationForm"
         android:name="com.example.autoservice.ui.RegistrationForm"
-        tools:layout="@layout/fragment_registration_form">
-
-        <action
-            android:id="@+id/action_registrationform_to_loginform"
-            app:destination="@id/LoginForm" />
-    </fragment>
+        tools:layout="@layout/fragment_registration_form"/>
     <fragment
         android:id="@+id/CustomerForm"
         android:name="com.example.autoservice.ui.CustomerForm"
@@ -48,10 +43,6 @@
         android:id="@+id/CallBackForm"
         android:name="com.example.autoservice.ui.CallBackForm"
         tools:layout="@layout/fragment_call_back_form">
-
-        <action
-            android:id="@+id/action_callbackform_to_customerform"
-            app:destination="@id/CustomerForm" />
     </fragment>
 
     <fragment
@@ -93,6 +84,5 @@
     <fragment
         android:id="@+id/ChangeOrderStatusForm"
         android:name="com.example.autoservice.ui.ChangeOrderStatusForm"
-        tools:layout="@layout/fragment_change_order_status_form">
-    </fragment>
+        tools:layout="@layout/fragment_change_order_status_form"/>
 </navigation>
