@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginForm">
+
+    <fragment
+        android:id="@+id/LoginForm"
+        android:name="com.example.autoservice.ui.LoginForm"
+        tools:layout="@layout/fragment_login_form">
+
+        <action
+            android:id="@+id/action_loginform_to_registrationform"
+            app:destination="@id/RegistrationForm" />
+        <action
+            android:id="@+id/action_loginform_to_customerform"
+            app:destination="@id/CustomerForm" />
+        <action
+            android:id="@+id/action_loginform_to_managerform"
+            app:destination="@id/ManagerForm" />
+        <action
+            android:id="@+id/action_loginform_to_masterform"
+            app:destination="@id/MasterForm" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegistrationForm"
+        android:name="com.example.autoservice.ui.RegistrationForm"
+        tools:layout="@layout/fragment_registration_form">
+
+        <action
+            android:id="@+id/action_registrationform_to_loginform"
+            app:destination="@id/LoginForm" />
+    </fragment>
+    <fragment
+        android:id="@+id/CustomerForm"
+        android:name="com.example.autoservice.ui.CustomerForm"
+        tools:layout="@layout/fragment_customer_form">
+
+        <action
+            android:id="@+id/action_customerform_to_callbackform"
+            app:destination="@id/CallBackForm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CallBackForm"
+        android:name="com.example.autoservice.ui.CallBackForm"
+        tools:layout="@layout/fragment_call_back_form">
+
+        <action
+            android:id="@+id/action_callbackform_to_customerform"
+            app:destination="@id/CustomerForm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ManagerForm"
+        android:name="com.example.autoservice.ui.ManagerForm"
+        tools:layout="@layout/fragment_manager_form">
+
+        <action
+            android:id="@+id/action_managerform_to_neworderform"
+            app:destination="@id/OrderForm" />
+
+        <action
+            android:id="@+id/action_managerform_to_editorderform"
+            app:destination="@id/EditOrderForm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MasterForm"
+        android:name="com.example.autoservice.ui.MasterForm"
+        tools:layout="@layout/fragment_master_form">
+
+        <action
+            android:id="@+id/action_masterform_to_changeorderstatusform"
+            app:destination="@id/ChangeOrderStatusForm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/OrderForm"
+        android:name="com.example.autoservice.ui.OrderForm"
+        tools:layout="@layout/fragment_order_form">
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditOrderForm"
+        android:name="com.example.autoservice.ui.EditOrderForm"
+        tools:layout="@layout/fragment_edit_order_form">
+    </fragment>
+
+    <fragment
+        android:id="@+id/ChangeOrderStatusForm"
+        android:name="com.example.autoservice.ui.ChangeOrderStatusForm"
+        tools:layout="@layout/fragment_change_order_status_form">
+    </fragment>
+</navigation>
