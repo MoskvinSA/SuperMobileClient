@@ -9,6 +9,6 @@ public class OrderDto {
     private Long id;
     private String name;
     private String clientName;
-    private Date date;
+    private String date;
     private String status;
 }

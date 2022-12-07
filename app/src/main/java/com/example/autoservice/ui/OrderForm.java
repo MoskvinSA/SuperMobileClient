@@ -56,7 +56,7 @@ public class OrderForm extends Fragment {
                     ForSavingOrderDto tmpDto=new ForSavingOrderDto(
                                     binding.name.getText().toString(),
                                     Long.parseLong(binding.clientId.getText().toString()),
-                                    new Date(binding.dateAndTime.getText().toString()));
+                                    binding.dateAndTime.getText().toString());
 
                     String response = UtilClass.sendRequestToSaveOrder(tmpDto);
                     if (response.equals("Success")) {

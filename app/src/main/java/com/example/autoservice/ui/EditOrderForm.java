@@ -55,7 +55,7 @@ public class EditOrderForm extends Fragment {
                 try {
                     UpdateOrderDto tmpDto = new UpdateOrderDto(
                             Long.parseLong(binding.orderNumber.getText().toString()),
-                            new Date(binding.time.getText().toString()));
+                            binding.time.getText().toString());
 
                     System.out.println(tmpDto);
 

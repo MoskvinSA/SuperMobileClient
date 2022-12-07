@@ -10,5 +10,5 @@ import lombok.Data;
 public class ForSavingOrderDto {
     private String name;
     private Long clientId;
-    private Date date;
+    private String date;
 }

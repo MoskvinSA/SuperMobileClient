@@ -8,5 +8,5 @@ import lombok.Data;
 @AllArgsConstructor
 public class UpdateOrderDto {
     private Long id;
-    private Date newDateAndTime;
+    private String newDateAndTime;
 }
